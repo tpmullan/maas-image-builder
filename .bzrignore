@@ -1,0 +1,4 @@
+./.tox
+./build
+./debian/changelog
+*.egg-info

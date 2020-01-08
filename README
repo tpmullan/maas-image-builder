@@ -1,0 +1,21 @@
+.. -*- mode: rst -*-
+
+******************
+MAAS Image Builder
+******************
+
+Automated builder for creating images that can be deployed by MAAS and
+installed by the curtin installer. For information on MAAS visit
+http://maas.ubuntu.com and for information on curtin visit
+http://launchpad.net/curtin.
+
+Supported Operating Systems:
+ - CentOS 6 (i386, amd64)
+ - CentOS 7 (amd64)
+ - RedHat Enterprise Linux 7 (amd64)
+ - Windows Server 2008 (i386, amd64)
+ - Windows Server 2008 R2 (i386, amd64)
+ - Windows Server 2012 (i386, amd64)
+ - Windows Server 2012 R2 (i386, amd64)
+ - Windows Hyper-V Server 2012 (i386, amd64)
+ - Windows Hyper-V Server 2012 R2 (i386, amd64)

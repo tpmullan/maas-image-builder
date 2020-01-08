@@ -1,0 +1,61 @@
+maas-image-builder (1.0.5+bzr54-0ubuntu1) UNRELEASED; urgency=low
+
+  * Fix --windows-drivers to not fail during logon and firstlogon.
+  * Fix kpartx_del to handle failures and retry up to 10 seconds.
+  * Prevent windows qemu VNC from listening on all addresses.
+
+ -- Blake Rouse <blake.rouse@canonical.com>  Fri, 9 Jun 2017 10:51:15 -0400
+
+maas-image-builder (1.0.4+bzr48-0ubuntu1) UNRELEASED; urgency=low
+
+  * Add --cloudbase-init option to Windows driver.
+  * Support appending custom kickstarter option to CentOS and RHEL drivers.
+  * RHEL driver use CentOS hook files.
+
+ -- Blake Rouse <blake.rouse@canonical.com>  Wed, 31 May 2017 13:50:18 -0400
+
+maas-image-builder (1.0.3+bzr44-0ubuntu1) UNRELEASED; urgency=low
+
+  * Fix Cent OS 7 UEFI to remove old EFI entries and place current boot
+    in-front of centos EFI loader.
+
+ -- Blake Rouse <blake.rouse@canonical.com>  Fri, 3 May 2017 20:08:32 -0400
+
+maas-image-builder (1.0.2+bzr42-0ubuntu1) UNRELEASED; urgency=low
+
+  * Fix Windows image builder to work with python3.
+
+ -- Blake Rouse <blake.rouse@canonical.com>  Fri, 21 Apr 2017 11:42:32 -0400
+
+maas-image-builder (1.0.1+bzr40-0ubuntu1) UNRELEASED; urgency=low
+
+  * Fix UEFI installation with CentOS 7
+
+ -- Blake Rouse <blake.rouse@canonical.com>  Fri, 21 Apr 2017 09:14:08 -0400
+
+maas-image-builder (1.0.0+bzr36-0ubuntu1) UNRELEASED; urgency=low
+
+  * Fix virt-install to work on systems with apparmor.
+  * Change from python2.7 to python3.
+
+ -- Blake Rouse <blake.rouse@canonical.com>  Wed, 19 Apr 2017 16:54:04 -0400
+
+maas-image-builder (0.9.0+bzr27-0ubuntu1) UNRELEASED; urgency=low
+
+  * Merge Windows and RHEL into the same code base. Make all of
+    maas-image-builder private and update the copyright..
+
+ -- Blake Rouse <blake.rouse@canonical.com>  Wed, 6 Jul 2016 11:14:18 -0400
+
+maas-image-builder (0.9.0+bzr24-0ubuntu1) UNRELEASED; urgency=low
+
+  * Fix CentOS 6 & 7 to not use udev rules.
+  * Fix CentOS 7 repository URL for python-oauth.
+
+ -- Blake Rouse <blake.rouse@canonical.com>  Wed, 31 Jul 2015 14:56:14 -0400
+
+maas-image-builder (0.9.0+bzr20-0ubuntu1) UNRELEASED; urgency=low
+
+  * Initial release
+
+ -- Blake Rouse <blake.rouse@canonical.com>  Wed, 11 Mar 2015 14:59:09 -0400

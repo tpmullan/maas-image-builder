@@ -1,0 +1,12 @@
+dos2unix
+dosfstools
+genisoimage
+kpartx
+kvm
+libvirt-bin
+ntfs-3g
+qemu-kvm-spice
+qemu-utils
+unzip
+virtinst
+wget

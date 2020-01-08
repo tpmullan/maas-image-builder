@@ -1,0 +1,19 @@
+#!/usr/bin/make -f
+
+PYTHON3 = $(shell py3versions -d)
+
+%:
+	dh $@ --with=python3
+
+override_dh_auto_build:
+	@echo "Auto build does nothing."
+
+override_dh_auto_install:
+	$(PYTHON3) setup.py build --executable=/usr/bin/python3
+	$(PYTHON3) setup.py install --root=$(CURDIR)/debian/tmp --install-layout=deb
+
+	dh_install --list-missing
+
+override_dh_auto_clean:
+	dh_auto_clean
+	rm -rf src/*.egg-info
